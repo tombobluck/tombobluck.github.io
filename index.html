@@ -83,12 +83,13 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="如何随便输入一串数并打出来不重复的数"><a href="#如何随便输入一串数并打出来不重复的数" class="headerlink" title="如何随便输入一串数并打出来不重复的数"></a>如何随便输入一串数并打出来不重复的数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[]args)</span></span>&#123;</span><br><span class="line">Scanner sc=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">String[] nums=<span class="keyword">null</span>;</span><br><span class="line">nums=sc.nextLine().split(<span class="string">&quot; &quot;</span>);</span><br><span class="line">    <span class="keyword">int</span>[] num=<span class="keyword">new</span> <span class="keyword">int</span>[nums.length];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;num.length;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        num[i]=Integer.valueOf(nums[i]);</span><br><span class="line">    &#125;</span><br><span class="line">        System.out.print(num[<span class="number">0</span>]);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;num.length;i++)</span><br><span class="line">    &#123;<span class="keyword">int</span> m=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;i;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(num[i]==num[j])</span><br><span class="line">            &#123;</span><br><span class="line">                m++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(m==<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot; &quot;</span>+num[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="java"><a href="#java" class="headerlink" title="java"></a>java</h1><h2 id="如何随便输入一串数并打出来不重复的数"><a href="#如何随便输入一串数并打出来不重复的数" class="headerlink" title="如何随便输入一串数并打出来不重复的数"></a>如何随便输入一串数并打出来不重复的数</h2><p>import java.util.Scanner;<br>class Main{<br>    public static void main(String[]args){<br>Scanner sc=new Scanner(System.in);<br>String[] nums=null;<br>nums=sc.nextLine().split(“ “);<br>    int[] num=new int[nums.length];<br>    for(int i=0;i&lt;num.length;i++)<br>    {<br>        num[i]=Integer.valueOf(nums[i]);<br>    }<br>        System.out.print(num[0]);<br>    for(int i=1;i&lt;num.length;i++)<br>    {int m=0;<br>        for(int j=0; j&lt;i;j++)<br>        {<br>            if(num[i]==num[j])<br>            {<br>                m++;<br>            }<br>        }<br>        if(m==0)<br>        {<br>            System.out.print(“ “+num[i]);<br>        }</p>
+<p>​    }<br>​    }<br>}</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/12/java/" data-id="cknee7dqv0002m4uje6a143lc" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/12/java/" data-id="ckneepopo0002bouj0vy8dstp" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -176,7 +177,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/06/build-blog/" data-id="cknee7dqp0000m4ujfopta1w9" data-title="build blog" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/01/06/build-blog/" data-id="ckneepoph0000bouj3swbbu57" data-title="build blog" class="article-share-link">Share</a>
       
       
       
@@ -223,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/05/hello-world/" data-id="cknee7dqu0001m4ujgu6r5z3k" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/01/05/hello-world/" data-id="ckneepopm0001boujah3b39cp" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
